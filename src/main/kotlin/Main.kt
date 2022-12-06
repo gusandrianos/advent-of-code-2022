@@ -1,4 +1,3 @@
-import inputs.Problem6
 import java.io.File
 import java.io.InputStream
 import java.nio.file.Paths

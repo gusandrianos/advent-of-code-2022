@@ -1,7 +1,3 @@
-package inputs
-
-import stringFromFile
-
 object Problem6 {
 
     fun a() {
