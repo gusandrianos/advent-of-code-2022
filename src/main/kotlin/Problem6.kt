@@ -3,16 +3,16 @@ object Problem6 {
     fun a() {
 //        val msg = stringFromFile("inputs/problem6_example.txt").toCharArray()
         val msg = stringFromFile("inputs/problem6.txt").toCharArray()
-        findConsecutiveChars(msg, 4)
+        findConsecutiveChars(msg, 4, 'A')
     }
 
     fun b() {
 //        val msg = stringFromFile("inputs/problem6_example.txt").toCharArray()
         val msg = stringFromFile("inputs/problem6.txt").toCharArray()
-        findConsecutiveChars(msg, 14)
+        findConsecutiveChars(msg, 14, 'B')
     }
 
-    private fun findConsecutiveChars(msg: CharArray, numberOfConsecutiveChars: Int) {
+    private fun findConsecutiveChars(msg: CharArray, numberOfConsecutiveChars: Int, problem: Char) {
         val sequenceOfChars = mutableSetOf<Char>()
         var startingIndex = 0
         var foundIndex = 0
@@ -29,6 +29,6 @@ object Problem6 {
                 }
             }
         }
-        println(foundIndex)
+        println("Problem 6$problem: $foundIndex")
     }
 }
