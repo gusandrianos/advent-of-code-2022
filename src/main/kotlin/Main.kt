@@ -23,6 +23,8 @@ fun main() {
     Problem9.b()
     Problem10.a()
     Problem10.b()
+    Problem11.a()
+    Problem11.b()
 }
 
 fun stringFromFile(filename: String): String {
